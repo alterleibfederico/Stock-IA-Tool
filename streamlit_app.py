@@ -1,10 +1,12 @@
 #pip install streamlit fbprophet yfinance plotly
-!pip install yfinance
 
 import streamlit as st
 from datetime import date
 
+import pandas as pd
 import yfinance as yf
+from yahoofinancials import YahooFinancials
+
 from fbprophet import Prophet
 from fbprophet.plot import plot_plotly
 from plotly import graph_objs as go
